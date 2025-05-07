@@ -91,8 +91,9 @@ GET http://localhost:3000/proverbs/1
 **Request**
 ```bash
 POST http://localhost:3000/proverbs
+```
 Content-Type: application/json
-
+```json
 {
   "textDari": "توانا بود هر که دانا بود",
   "textPashto": "توانا هغه دی چې پوهاند وی",
@@ -120,9 +121,9 @@ Content-Type: application/json
 **Request**
 ```bash
 PUT http://localhost:3000/proverbs/6
-
+```
 Content-Type: application/json
-
+```json
 {
   "textDari": "توانا بود هر که دانا بود",
   "textPashto": "توانا هغه دی چې پوهاند وی",
