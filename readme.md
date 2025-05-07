@@ -85,6 +85,63 @@ GET http://localhost:3000/proverbs/1
 ```
 
 
+### 📖 GET - Get a Random Proverb
+
+**Request**
+```bash
+GET http://localhost:3000/proverbs/random
+```
+**Response**
+```json
+{
+  "id": 3,
+  "textDari": "هر که باد بکارد، طوفان درو می‌کند",
+  "textPashto": "څوک چې باد کري، توپان رېبي",
+  "translationEn": "He who sows the wind reaps the storm.",
+  "meaning": "Bad actions lead to worse consequences.",
+  "category": "wisdom"
+}
+```
+
+
+### 📖 Get - Filter Proverbs by Category
+
+**Request**
+```bash
+GET http://localhost:3000/proverbs?category=wisdom
+```
+
+**Response**
+```json
+[
+  {
+    "id": 1,
+    "textDari": "آب که یک‌جا بماند، می‌گندد",
+    "textPashto": "اوبه چې ودریږي، خوسا کېږي",
+    "translationEn": "Water that stays still will rot.",
+    "meaning": "Inaction leads to stagnation or decay.",
+    "category": "wisdom"
+  },
+  {
+    "id": 3,
+    "textDari": "هر که باد بکارد، طوفان درو می‌کند",
+    "textPashto": "څوک چې باد کري، توپان رېبي",
+    "translationEn": "He who sows the wind reaps the storm.",
+    "meaning": "Bad actions lead to worse consequences.",
+    "category": "wisdom"
+  },
+  {
+    "id": 4,
+    "textDari": "با یک گل بهار نمی‌شود",
+    "textPashto": "یوه ګله پسرلی نه کېږي",
+    "translationEn": "One flower doesn't bring spring.",
+    "meaning": "One small change isn't enough to make a big difference.",
+    "category": "wisdom"
+  }
+]
+
+```
+
 
 ### ✏️ POST - Add a New Proverb
 
@@ -113,8 +170,6 @@ Content-Type: application/json
   "category": "wisdom"
 }
 ```
-
-
 
 ### ✏️ PUT - Update an Existing Proverb
 
