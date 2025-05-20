@@ -1,0 +1,36 @@
+<%- include("partials/header") %>
+
+<h2 class="mb-4">✏️ Edit Proverb</h2>
+
+<form action="http://localhost:3000/proverbs/<%= proverb.id %>?_method=PUT" method="post" class="card p-4 shadow-sm">
+  <div class="mb-3">
+    <label>Dari</label>
+    <input name="textDari" class="form-control" value="<%= proverb.textDari %>" required>
+  </div>
+
+  <div class="mb-3">
+    <label>Pashto</label>
+    <input name="textPashto" class="form-control" value="<%= proverb.textPashto %>" required>
+  </div>
+
+  <div class="mb-3">
+    <label>English Translation</label>
+    <input name="translationEn" class="form-control" value="<%= proverb.translationEn %>" required>
+  </div>
+
+  <div class="mb-3">
+    <label>Meaning</label>
+    <input name="meaning" class="form-control" value="<%= proverb.meaning %>" required>
+  </div>
+
+  <div class="mb-3">
+    <label>Category</label>
+    <input name="category" class="form-control" value="<%= proverb.category %>" required>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Update Proverb</button>
+</form>
+
+<a href="/" class="btn btn-link mt-3">← Back to Home</a>
+
+<%- include("partials/footer") %>

@@ -1,23 +1,7 @@
 [
   {
-    "id": 1,
-    "textDari": "آب که یک‌جا بماند، می‌گندد",
-    "textPashto": "اوبه چې ودریږي، خوسا کېږي",
-    "translationEn": "Water that stays still will rot.",
-    "meaning": "Inaction leads to stagnation or decay.",
-    "category": "wisdom"
-  },
-  {
-    "id": 2,
-    "textDari": "سیلی نقد به از حلوای نسیه",
-    "textPashto": "نقد سیلی د نسیه حلوا نه ښه ده",
-    "translationEn": "A slap in cash is better than a promise of sweets.",
-    "meaning": "Something real and present is better than empty promises.",
-    "category": "advice"
-  },
-  {
     "id": 3,
-    "textDari": "هر که باد بکارد، طوفان درو می‌کند",
+    "textDari": "هر که باد بکارد, طوفان درو می‌کند..",
     "textPashto": "څوک چې باد کري، توپان رېبي",
     "translationEn": "He who sows the wind reaps the storm.",
     "meaning": "Bad actions lead to worse consequences.",
@@ -40,11 +24,19 @@
     "category": "advice"
   },
   {
-    "id": 6,
-    "textDari": "توانا بود هر که دانا بود",
-    "textPashto": "توانا هغه دی چې پوهاند وی",
-    "translationEn": "He who is wise is capable.",
-    "meaning": "Wisdom makes one capable of achieving great things.",
-    "category": "wisdom"
+    "id": 4,
+    "textDari": "دوست آن باشد که گیرد دست دوست",
+    "textPashto": "دوست هغه دی چې د دوست لاس ونیسي",
+    "translationEn": "A true friend is one who lends a hand.",
+    "meaning": "A real friend supports you in difficult times.",
+    "category": "friendship"
+  },
+  {
+    "id": 5,
+    "textDari": "دوست آن باشد که گیرد دست دوست",
+    "textPashto": "دوست هغه دی چې د دوست لاس ونیسي",
+    "translationEn": "A true friend is one who lends a hand.",
+    "meaning": "A real friend supports you in difficult times.",
+    "category": "friendship"
   }
 ]

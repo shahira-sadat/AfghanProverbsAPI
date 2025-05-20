@@ -1,0 +1,16 @@
+<%- include("partials/header") %>
+
+<h2>Random Proverb</h2>
+
+<div class="card p-3 mb-3">
+  <p><strong>Dari:</strong> <%= proverb.textDari %></p>
+  <p><strong>Pashto:</strong> <%= proverb.textPashto %></p>
+  <p><strong>English:</strong> <%= proverb.translationEn %></p>
+  <p><strong>Meaning:</strong> <%= proverb.meaning %></p>
+  <p><strong>Category:</strong> <%= proverb.category %></p>
+</div>
+
+<a href="/" class="btn btn-primary">← Back to List</a>
+<a href="/random" class="btn btn-secondary">🔄 Another Random</a>
+
+<%- include("partials/footer") %>

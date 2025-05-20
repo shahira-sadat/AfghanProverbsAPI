@@ -1,0 +1,31 @@
+<%- include("partials/header") %>
+
+<h1 class="mb-4">Afghan Proverbs</h1>
+
+<form class="row g-2 mb-4" method="get" action="/">
+  <div class="col-md-5">
+    <input type="text" class="form-control" name="search" placeholder="Search proverbs...">
+  </div>
+  <div class="col-md-4">
+    <input type="text" class="form-control" name="category" placeholder="Filter by category...">
+  </div>
+  <div class="col-md-3 d-grid">
+    <button type="submit" class="btn btn-primary">Search / Filter</button>
+  </div>
+</form>
+
+<ul class="list-group mb-4">
+  <% proverbs.forEach(p => { %>
+    <li class="list-group-item">
+      <p><strong>Dari:</strong> <%= p.textDari %></p>
+      <p><strong>Pashto:</strong> <%= p.textPashto %></p>
+      <p><strong>English:</strong> <%= p.translationEn %></p>
+      <p><strong>Category:</strong> <%= p.category %></p>
+      <a href="/proverb/<%= p.id %>" class="btn btn-sm btn-outline-primary">View Details</a>
+    </li>
+  <% }) %>
+</ul>
+
+<a href="/add" class="btn btn-success">➕ Add New Proverb</a>
+
+<%- include("partials/footer") %>
