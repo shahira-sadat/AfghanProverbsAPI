@@ -1,21 +1,53 @@
-# Afghan Proverbs & Sayings API
-> This is a RESTful API for managing Afghan proverbs and sayings in Dari, Pashto, and their English translations. This API allows users to perform CRUD operations (Create, Read, Update, Delete) on Afghan proverbs and sayings, as well as filter them by category and search by keywords.
+# Afghan Proverbs & Sayings API & Frontend App
 
+> A fullstack CRUD application for managing Afghan proverbs and sayings in Dari, Pashto, and their English translations.  
+Built with Node.js, Express, EJS, Bootstrap and JSON storage.  
+The backend API allows CRUD operations and category-based filtering, while the frontend EJS app provides a clean, responsive interface for interacting with the API.
+> 
+<img width="1431" alt="Screen Shot 2025-05-14 at 6 22 00 PM" src="https://github.com/user-attachments/assets/bd8e2847-6a59-4e7b-95f5-b174ca0a0f5e" />
 
-## Built With
-- Backend: Node.js, Express.js
-- Storage: JSON file (for simplicity), could be replaced with a database like PostgreSQL or MongoDB
-- Format: JSON for all request/response bodies
+---
 
+## Live Demo
 
-## API Endpoints
-- **GET /proverbs**: Get all proverbs (optionally filter by category or search by keyword)
-- **GET /proverbs/:id**: Get a single proverb by its ID
-- **POST /proverbs**: Add a new proverb
-- **PUT /proverbs/:id**: Update an existing proverb
-- **DELETE /proverbs/:id**: Delete a proverb
-- **GET /proverbs/random**: Get a random proverb
-- **GET /proverbs?category=category**: Filter proverbs by category
+Can check the live demo [here]()
+
+---
+
+## 📦 Built With
+
+- **Backend**: Node.js, Express.js
+- **Frontend**: EJS templates with Express for server-side rendering
+- **Styling**: Bootstrap 5, custom CSS
+- **Data Storage**: JSON file (for simplicity)
+- **HTTP Requests (Frontend)**: Axios
+- **Form Method Override**: method-override for PUT and DELETE requests via forms
+
+---
+
+## 🌐 API Endpoints (Assignment 4)
+
+- `GET /proverbs` — Get all proverbs (optionally filter by category or search keyword)
+- `GET /proverbs/:id` — Get a single proverb by ID
+- `POST /proverbs` — Add a new proverb
+- `PUT /proverbs/:id` — Update an existing proverb
+- `DELETE /proverbs/:id` — Delete a proverb
+- `GET /proverbs/random` — Get a random proverb
+- `GET /proverbs?category=category` — Filter proverbs by category
+
+---
+
+## 🎨 Frontend Features (Assignment 5)
+
+- 📜 **Homepage**: Lists all proverbs with Dari, Pashto, English, category, and details button
+- 🎲 **Random Proverb**: View a random proverb
+- ➕ **Add New Proverb**: Form with validation
+- ✏️ **Edit Proverb**: Edit existing proverbs (pre-filled form)
+- 🗑️ **Delete Proverb**: Delete with confirmation dialog
+- 🔍 **Search / Filter**: Search by keyword and filter by category
+- 📱 **Responsive, Bootstrap-styled layout**
+
+---
 
 ## Getting Started
 To get a local copy up and running, follow these simple steps.
@@ -34,6 +66,14 @@ npm install
 ### Usage
 ```bash
 node app.js
+```
+Backend runs at: 
+```bash
+http://localhost:3000/proverbs
+```
+Frontend runs at: 
+```bash
+http://localhost:3000/
 ```
 
 ## API Usage Examples
